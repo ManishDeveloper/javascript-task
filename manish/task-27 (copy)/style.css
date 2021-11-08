@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+h2{
+    color: #fff;
+    text-align: center;
+}
+input{
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+}
+input:focus{
+    outline: none;
+}
+table{
+    border:1px solid;
+    border-collapse: collapse;
+    width: 350px;
+    margin-top: 25px;
+}
+th,tr,td{
+    border:1px solid;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
