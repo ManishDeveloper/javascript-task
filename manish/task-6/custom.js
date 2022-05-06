@@ -7,7 +7,7 @@ let today = new Date();
 
 const day = today.getDay();
 
-const dayList = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Saturday"];
+const dayList = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 todayDay.innerHTML = `Today is: ${dayList[day]}`;
 
