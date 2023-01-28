@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+#form{
+    width: 400px;
+    margin: 50px auto;
+    background-color: #eee;
+    padding: 3%;
+}
+.form-control.green {
+    border: 1px solid #6bc400;
+}
+#passMessage{
+    display:none;
+}
+#passMessage p{
+    margin:10px 0 5px;
+    font-size: 12px;
+}
+#passMessage ul{
+    margin-left: 20px;
+}
+#passMessage ul li{
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
