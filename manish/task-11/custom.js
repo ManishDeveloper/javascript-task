@@ -3,15 +3,17 @@ const year = document.getElementById("showYear");
 const input = document.getElementById("inputYear");
 
 input.addEventListener("keyup",(e)=>{
-    let leapYear = +e.target.value;
+    let inputYear = +e.target.value;
+    
+    let isLeapYear = new Date(inputYear, 1, 29).getDate() === 29;
 
-    if(leapYear.toString().length === 4){
+    if(inputYear.toString().length === 4){
         
-        if((leapYear%400 === 0) || ((leapYear%4===0) && (leapYear%100 !== 0))){
-            year.innerHTML = `${leapYear} is leap year.`
+        if(isLeapYear){
+            year.innerHTML = `${inputYear} is leap year.`
         }
         else {
-            year.innerHTML = `${leapYear} is not leap year.`
+            year.innerHTML = `${inputYear} is not leap year.`
         }
     }
     else {

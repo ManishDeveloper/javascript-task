@@ -2,12 +2,12 @@
 const button = document.getElementById("button");
 const toastBox = document.getElementById("toasts");
 
-const messages = ['Fist Notification','Second Notification','Third Notification'];
+const messages = ['First Notification','Second Notification','Third Notification'];
 
 button.addEventListener('click',()=>{
     const notif = document.createElement('div');
     notif.classList.add('toast');
-    notif.innerHTML = messages[Math.ceil(Math.random()*(messages.length-1))];
+    notif.innerHTML = messages[Math.floor(Math.random()*(messages.length))];
 
     toastBox.appendChild(notif);
 
