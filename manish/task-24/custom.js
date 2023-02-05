@@ -11,6 +11,6 @@ const removeItemFromArray = (array, n) => {
     return array;
 }
 
-const result = removeItemFromArray([1, 2, 3 , 4, 5], 2);
+const result = removeItemFromArray([1, 2, 3 , 4, 5], 5);
 
 console.log(result);

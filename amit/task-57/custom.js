@@ -6,10 +6,13 @@ let arr2 = ['Rohan', 'Ashish', 'Manoj', 'Ram'];
 
 //debugger
 arr.forEach((item, index)=>{
-    console.log(obj[item] = arr2[index])
-     obj[item] = arr2[index]
+    //console.log(obj[item], arr2[index])
+    obj[item] = arr2[index]
 })
 
-//console.log(obj)
+console.log(obj)
+
+
+
 
 
