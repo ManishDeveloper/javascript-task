@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+    <style>
+        body{margin:0;padding: 30px;font-family: Arial, Helvetica, sans-serif;background: #663399;color:#ffffff;}
+    </style>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h3>Write a JavaScript Program to Print the Fibonacci Sequence.</h3>
+    
+    <h2>Fibonacci Series:</h2>
+
+    <script>
+        const number = parseInt(prompt('Enter the number of terms: '));
+        let n1 = 0, n2 = 1, nextTerm;
+
+        for (let i = 1; i <= number; i++) {
+            document.write(`<h2>${n1}</h2>`);
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+        }
+
+    </script>
+</body>
+</html>

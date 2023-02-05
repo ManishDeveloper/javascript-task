@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+    <style>
+        body{margin:0;padding: 30px;font-family: Arial, Helvetica, sans-serif;background: #663399;color:#ffffff;}
+    </style>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h3>Write a JavaScript program to Check Prime Number.</h3>
+    
+    <h2>Result:</h2>
+    <h2 id="result"></h2>
+
+    <script>
+        const result = document.getElementById("result");
+        let num = prompt('Enter any number greater then 0.');
+        let isPrime = true;
+        if(num>0){
+        for(let i=2;i<num;i++){
+            if(num%i===0){
+                isPrime = false;
+                break;
+            }
+        }
+
+        isPrime ? result.innerHTML = `${num} is a prime number.` : result.innerHTML = `${num} is not a prime number.`
+
+        }
+        else {
+            result.innerHTML = `${num} is not greater then 0`
+        }
+            
+    </script>
+</body>
+</html>

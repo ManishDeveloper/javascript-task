@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize First String</title>
+    <style>
+        body{margin:0;padding: 30px;font-family: Arial, Helvetica, sans-serif;background: #663399;color:#ffffff;}
+    </style>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h3>Write a JavaScript program to capitalize the first letter of each word of a given string.</h3>
+    
+    <input type="text" id="inputString" class="num-type" placeholder="Type string.."/>
+    <h2 id="showString"></h2>
+
+    <script>
+        const typeText = document.getElementById("inputString");
+        const showText = document.getElementById("showString");
+
+
+        typeText.addEventListener("keyup",(e)=>{
+
+            let text = e.target.value.split(' ');
+
+            let newText = text.map(word => word.charAt(0).toUpperCase()+word.slice(1).toLowerCase());
+
+            let finalText = newText.join(' ');
+
+            showText.innerText = finalText;
+        });
+    </script>
+</body>
+</html>

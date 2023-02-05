@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuffle String</title>
+    <style>
+        body{margin:0;padding: 30px;font-family: Arial, Helvetica, sans-serif;background: #663399;color:#ffffff;}
+        .btn{color: #663399;padding: 10px 20px;font-size: 14px;border: none;border-radius: 5px;cursor: pointer;}
+    </style>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h3>Write a JavaScript program to shuffle a String.</h3>
+    <button class="btn" id="shuffleBtn">Shuffle String</button>
+    <h2 id="shuffleArr"></h2>
+
+    <script>
+        const showArr = document.getElementById("shuffleArr");
+        const shuffleBtn = document.getElementById('shuffleBtn');
+
+        let shuffleArr = "HelloWorld";
+
+        showArr.innerHTML = shuffleArr;
+
+        shuffleArr = shuffleArr.split("");
+
+        shuffleBtn.addEventListener('click',()=>{
+            shuffleArr = shuffleArr.sort((a,b)=>0.5-Math.random());
+            showArr.innerHTML = shuffleArr.join("");
+        });
+
+    </script>
+</body>
+</html>

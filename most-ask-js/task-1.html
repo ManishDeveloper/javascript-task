@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Variable</title>
+    <style>
+        body{margin:0;padding: 30px;font-family: Arial, Helvetica, sans-serif;background: #663399;color:#ffffff;}
+    </style>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h3>Swap two variables value without help of 3rd variable.<br>
+        let a = 5, let b = 10<br>
+        Expected: a=10, b=5</h3>
+
+    <h3>Note: Open console to see the result.</h3>
+
+
+    <script>
+        let a = 5;
+        let b = 10;
+
+        //After Swap
+        [a,b] = [b,a];
+
+        console.log(`After Swap --> a: ${a}, b: ${b}`);
+            
+    </script>
+</body>
+</html>

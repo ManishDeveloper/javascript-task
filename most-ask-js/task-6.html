@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+    <style>
+        body{margin:0;padding: 30px;font-family: Arial, Helvetica, sans-serif;background: #663399;color:#ffffff;}
+    </style>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h3>Write a JavaScript program to determine whether a given year is a leap year or not.</h3>
+    
+    <h2>Result:</h2>
+    <h2 id="result"></h2>
+
+    <script>
+        const result = document.getElementById("result");
+        let inputYear = prompt('Enter any number greater then 0.');
+
+        let isLeapYear = new Date(inputYear, 1, 29).getDate() === 29;
+
+        if(inputYear.toString().length === 4){
+            
+        isLeapYear ? result.innerHTML = `${inputYear} is leap year.` : result.innerHTML = `${inputYear} is not leap year.`
+                
+        }
+        else {
+            result.innerHTML = "Input Should be 4 Digit.";
+        }
+            
+    </script>
+</body>
+</html>

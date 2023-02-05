@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Array or Not</title>
+    <style>
+        body{margin:0;padding: 30px;font-family: Arial, Helvetica, sans-serif;background: #663399;color:#ffffff;}
+    </style>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h3>Write a JavaScript function to check whether an `input` is an array or not.<br>
+        Test Data :<br>
+        console.log(is_array('onsumaye')); //false<br>
+        console.log(is_array([1, 2, 4, 0])); //true</h3>
+    
+    <h2>Open Console to see the Result</h2>
+
+    <script>
+        const checkArray = (array) => {
+
+        return Array.isArray(array);
+        }
+
+        console.log(checkArray([1,2,3,4]));
+        console.log(checkArray(2));
+        console.log(checkArray('hello'));
+        console.log(checkArray(["one","two","three"]));
+    </script>
+</body>
+</html>

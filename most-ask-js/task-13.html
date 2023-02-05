@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Specific Item</title>
+    <style>
+        body{margin:0;padding: 30px;font-family: Arial, Helvetica, sans-serif;background: #663399;color:#ffffff;}
+    </style>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h3>Write a Javascript Program to Remove Specific Item From an Array.</h3>
+    
+    <h2>Open Console to see the Result</h2>
+
+    <script>
+        const removeItemFromArray = (array, n) => {
+        const index = array.indexOf(n);
+
+        // if the element is in the array, remove it
+        if(index > -1) {
+
+            // remove item
+            array.splice(index, 1);
+        }
+        return array;
+        }
+
+        const result = removeItemFromArray([1, 2, 3 , 4, 5], 2);
+
+        console.log(result);
+    </script>
+</body>
+</html>
