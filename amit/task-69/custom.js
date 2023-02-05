@@ -1,11 +1,32 @@
 //Write Your JS Code Here
 
-let a = 5, b = 10;
-console.log('Question ' + a, b)
+let arr = [1,1,2,3,1,4,3];
 
-a=a+b;//a=15 (5+10)    
-b=a-b;//b=5 (15-10)    
-a=a-b;//a=5 (15-5) 
+// let obj = {}
+// obj[item] = 1;
+// console.log(obj[item] = 1)
 
+// arr.forEach((item) => {
+//     if(obj[item]){
+//         obj[item]++
+//     }else{
+//         obj[item] = 1;
+//     }    
+// });
+// console.log(obj)
 
-console.log('Output ' + a, b)
+let obj = {}
+
+let majorNum = 1;
+let majorOccur = 1;
+
+arr.forEach((item)=> obj[item] ? obj[item]++ : obj[item] = 1 )
+
+for(let i in obj){
+    if(obj[i] > majorOccur){
+        majorNum = i;
+        majorOccur = obj[i];
+    }
+}
+
+console.log(`${majorNum} occur ${majorOccur} times.`);
