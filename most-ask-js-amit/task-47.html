@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter</title>
+</head>
+<body>
+    <!------------Write HTML Code Here---------->
+    <h2>Find female whose age grater then 23, and with their name 2nd charector in 'n'.</h2>
+    </h3>let employees = [{"id": 1, "name": "Pratik", "age": 33, "gender": "male"},{"id": 2, "name": "Ketan", "age": 28, "gender": "male"},{"id": 3, "name": "Khushbu", "age": 22, "gender": "female"},{"id": 4, "name": "Virat", "age": 37, "gender": "male"},{"id": 5, "name": "Knupa", "age": 25, "gender": "female"}]</h3>
+    <h3>Open Console for Result</h3>
+
+    <script>
+        let employees = [{"id": 1, "name": "Pratik", "age": 33, "gender": "male"},{"id": 2, "name": "Ketan", "age": 28, "gender": "male"},{"id": 3, "name": "Khushbu", "age": 22, "gender": "female"},{"id": 4, "name": "Virat", "age": 37, "gender": "male"},{"id": 5, "name": "Knupa", "age": 25, "gender": "female"}]
+
+        let employeesNew = employees.filter((item, index)=>{
+            if(item.gender == 'female' && item.age > 23 && item.name.substring()[1] == "n"){
+                return item
+            }
+        })
+        console.log(employeesNew)
+
+
+    </script>
+</body>
+</html>
